@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Superpowers for GitHub",
+  "version": "0.1.0",
+  "description": "Small helpers for GitHub pull request reviews.",
+  "host_permissions": ["https://github.com/*"],
+  "options_ui": { "page": "options.html", "open_in_tab": true },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/pull/*"],
+      "js": ["superpowers.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
