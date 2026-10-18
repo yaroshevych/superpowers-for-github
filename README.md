@@ -18,22 +18,39 @@ The `safari/` folder also contains a macOS app wrapper. Open `Superpowers for Gi
 
 ## Shortcuts
 
+### PR navigation
+
 | Shortcut | Action |
 | --- | --- |
-| Shift+T | Toggle test files viewed; collapse when viewed, expand when cleared |
-| Shift+D | Toggle documentation files viewed; collapse when viewed, expand when cleared |
-| Shift+G | Toggle generated files, snapshots and lockfiles viewed; collapse when viewed, expand when cleared |
-| Shift+X | Toggle deleted files viewed; collapse when viewed, expand when cleared |
-| Ctrl+Shift+Enter | Click GitHub's **Submit review** button (⌘+Shift+Enter also works on Mac) |
-| Shift+R | Mark a draft PR ready for review |
 | Shift+C | Open Conversation |
 | Shift+F | Open Files changed |
-| Shift+K | Rotate between collapsing all diffs and expanding only unviewed diffs |
-| Shift+E | Expand all diffs |
-| j / k | After Shift+K collapses all: expand the next / previous diff, collapsing the one you left |
-| Shift+V | Toggle viewed status for the top visible file; targets the active file while using j/k |
 
-The review shortcut clicks the visible **Submit review** button, so it submits the review. Shortcuts are ignored while focus is in an input, textarea, editable region or editor. Action progress and failures are written to the page's developer console; there is no in-page UI.
+### Review
+
+| Shortcut | Action |
+| --- | --- |
+| Shift+R | Mark a draft PR ready for review |
+| Ctrl+Shift+Enter | Open the review submission menu in Files changed (⌘+Shift+Enter on Mac) |
+
+### Files changed
+
+| Shortcut | Action |
+| --- | --- |
+| Shift+T | Toggle test files viewed |
+| Shift+D | Toggle documentation files viewed |
+| Shift+G | Toggle generated files, snapshots and lockfiles viewed |
+| Shift+X | Toggle deleted files viewed |
+| Shift+V | Toggle viewed for the current file |
+
+### Diff navigation
+
+| Shortcut | Action |
+| --- | --- |
+| Shift+K | Collapse all; press again to expand unviewed files |
+| j / k | After collapsing all, expand the next / previous file |
+| Shift+E | Expand all files |
+
+Shortcuts are ignored while focus is in an input, textarea, editable region or editor. Action progress and failures are written to the page's developer console; there is no in-page UI.
 
 ## Shortcut reference
 
