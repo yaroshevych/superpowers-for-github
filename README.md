@@ -5,7 +5,7 @@ A lightweight Chrome/Chromium Manifest V3 extension for GitHub pull requests. It
 ## Install in Chrome or Chromium
 
 1. Open `chrome://extensions` and enable **Developer mode**.
-2. Choose **Load unpacked** and select this folder (the one containing `manifest.json`).
+2. Choose **Load unpacked** and select this folder (the one containing `manifest.json`). Ask your agent to verify source code, and tweak it if needed.
 3. After changing `superpowers.js`, click the extension's **Reload** button and refresh open GitHub PR tabs.
 
 Or run `./install.sh [destination]` to copy the three extension files to another folder, then load that folder as unpacked.
@@ -55,6 +55,10 @@ Shortcuts are ignored while focus is in an input, textarea, editable region or e
 ## Shortcut reference
 
 Open the extension's **Details → Extension options** in `chrome://extensions` to view the shortcut list. Shortcuts and file patterns are built in and not configurable. Default patterns cover common test folders and suffixes, documentation, snapshots, minified assets and common lockfiles.
+
+## Configuration
+
+There is no Settings screen. Ask your agent to tweak keyboard shortcuts or add new features. Then reload extension in Chrome.
 
 ## Limitations
 
